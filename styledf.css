@@ -281,6 +281,8 @@ font-size: 2rem;
 
 .skill{
   background-color: #f0e9d1;
+  align-items: center;
+  padding-bottom: 7rem;
 }
 
 .skill .head-skill{
@@ -308,37 +310,42 @@ font-size: 2rem;
   margin-top: -2rem;
 }
 
-.skill .row-skill{
-  display:flex;
-  margin-top: -4rem;
-  padding: 6rem;
-  justify-content: center;
-}
+  .skill .row-skill{
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    display: flex;
+    width: 60%;
+    margin-right: 20%;
+    margin-left: 20%;
+  }
 
-.skill-card{
-  text-align: center;
-  padding-bottom: 2rem;
-}
+  .skill .row-skill .skill-card{
+    text-align: center;
+    margin: 0;
+    width: 160px;
+    height: 180px;
 
-.skill .row-skill .skill-card img{
-  width: 30%;
-  transition: 0.4s;
-}
+  }
 
-.skill .row-skill .skill-card img:hover{
-  width: 50%;
-}
+  .skill .row-skill .skill-card img{
+    width: 80%;
+    transition: 0.5s;
+  }
 
-.skill .row-skill .skill-card .skill-title{
-  color: black;
-  margin: 1.5rem auto 1rem;
-}
+  .skill .row-skill .skill-card .gambar4 {
+    width: 55%;
+    padding-top: 5px;
+    margin-top: 27px;
+  }
 
-.skill .row-skill .skill-price{
-  color: black;
-  font-size: 0.9rem;
-  
-}
+  .skill .row-skill .skill-card img:hover{
+    width: 65%;
+  }
+
+  .skill .row-skill .skill-card .gambar4:hover {
+    width: 40%;
+  }
 
 /*kodingan kontak*/
 
@@ -677,6 +684,7 @@ font-size: 2rem;
   }
   
 
+
   .penutup{
     flex-wrap: wrap;
   }
@@ -763,21 +771,10 @@ font-size: 2rem;
     .about .row-about{
       flex-wrap: wrap;
     }
-    .skill .row-skill{
-      flex-wrap: wrap;
 
-    }
-    .skill .row-skill .skill-price{
-      opacity: 0;
-    }
-    .skill .row-skill .skill-card .gambar3{
-      width: 70%;
-    }
-    .skill .row-skill .skill-card{
-    padding: 0;
-    margin-top: -7px;
-    width: 50%;
-    height: 12rem;
+    .skill .row-skill .skill-card {
+      width: 50%;
+      height: 50%;
     }
     .skill .head-skill h1{
       font-size: 1.4rem;
